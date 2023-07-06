@@ -1,0 +1,110 @@
+/* color palet
+rgba(255,120,68,255)   orange
+rgba(254,254,254,254)  whita
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.borde{
+    border: white solid 1px;
+}
+
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+
+}
+
+ .login {
+    margin: 0 1.4% 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    height: 10vh;
+    background-color: rgba(255,120,68,255);
+ }
+
+ .login a{
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;    
+    width: 45%;
+    height: 50%;
+    background-color: rgba(254,254,254,254);
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+ }
+
+ .login :hover{
+    background-color: black;
+    color:rgba(254,254,254,254);
+ }
+
+ main{
+    display: grid;
+    grid-template-areas: 
+    "favorites title title tops"
+    "favorites img-film img-film tops"
+    "favorites review description description "
+    ;
+    grid-template-columns: 10% 10% auto 5%;
+    grid-template-rows: 15% auto 20%;
+ }
+
+ #title-page{
+    grid-area: title;
+
+ }
+ .favorite{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: favorites;
+
+    
+ }
+ .image-film{
+    grid-area: img-film;
+
+ }
+ .description{
+    grid-area: description;
+ }
+ .review{
+    grid-area: review;
+ } .top-week{
+    grid-area: tops;
+ }
+
+ .favorite a{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 5%;
+    background-color: rgba(255,120,68,255);
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(232, 238, 238);
+    font-size: 120%;
+ }
